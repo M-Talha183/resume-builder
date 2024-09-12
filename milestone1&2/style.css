@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height:  100px;
+    width: 100px;
+    border-radius: 50%;
+}
+body{
+    background-color:   #f2f2f2  ;
+
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+.main{
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: auto;
+    border: 2px solid black;
+    position: relative;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-color:  #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
+    
+    
+}
+#head{
+    
+    font-family: Arial, Helvetica, 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color:white;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(143, 94, 122, 0.699);
+   border-radius: 5px; 
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
+    margin: 15px;
+    
+
+}
+li:hover {
+    background-color:lightcoral;
+}
+p{
+    font-size: 20px;
+    
+} 
+/* CSS */
+.btn {
+    background-color:  #595959
+    ;
+    color: #fff;
+    padding: 12px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
+  }
+  .btn:hover{
+    background-color: rgb(21, 128, 163);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+
+  
+  /* Add this to your existing CSS  */
+
+ /* Add this to your existing CSS */
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+    .main {
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin: 20px;
+    }
+    .img {
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      margin-left: 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  
+  /* For screens with a maximum width of 480px (mobile devices) */
+  @media only screen and (max-width: 480px) {
+    .main {
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin: 10px;
+    }
+    .img {
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      margin-left: 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
