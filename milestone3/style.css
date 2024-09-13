@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0.253);
+}
+h1{
+    margin-left: 280px;
+    padding-top: 5px;
+    height: 40px;
+    width: 600px;
+    background-color:white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+}
+form {
+    margin: auto;
+    background-color: #eaf3da;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+fieldset {
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(34, 29, 29);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+
+}
+
+input,textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 1px);
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:white;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: rgb(165, 135, 235);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button :hover {
+    color: lawngreen;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #786f57;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#resume-display h2 {
+    color: black;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    h1 {
+        margin-left: 20px;
+        width: 90%;
+    }
+    form {
+        max-width: 90%;
+    }
+    fieldset {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    label {
+        margin-top: 5px;
+    }
+    input, textarea {
+        padding: 5px;
+    }
+    button {
+        padding: 5px;
+        font-size: 16px;
+    }
+    #resume-display {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    /* Adjust layout for mobile screens */
+    h1 {
+        margin-left: 10px;
+        width: 95%;
+        font-size: 24px;
+    }
+    form {
+        max-width: 95%;
+        padding: 10px;
+    }
+    fieldset {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    label {
+        margin-top: 2px;
+    }
+    input, textarea {
+        padding: 3px;
+        font-size: 14px;
+    }
+    button {
+        padding: 3px;
+        font-size: 14px;
+    }
+    #resume-display {
+        max-width: 95%;
+        padding: 5px;
+    }
+}
