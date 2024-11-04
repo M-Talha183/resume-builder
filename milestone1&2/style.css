@@ -1,6 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+     /* margin: 0; */
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background: #000; */
+}
+#heading{
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 0 0 10px cyan,;
+  text-shadow: 0 0 10px cyan,;
+  text-shadow: 0 0 10px cyan,;
+  text-shadow: 0 0 10px cyan;
 }
 
 img{
@@ -8,58 +26,53 @@ img{
     width: 100px;
     border-radius: 50%;
 }
-body{
-    background-color:   #f2f2f2  ;
-
+.personal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  flex-wrap: wrap;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-
-}
 .main{
-    justify-content: center;
+   display: grid;
+   justify-content: center;
     text-align: center;
     width: 700px;
     height: auto;
-    border: 2px solid black;
-    position: relative;
-    top: 500px;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    background-color:  #f2f2f2;
+    color: white;
+    border: 5px solid rgb(245, 245, 245);
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 #head{
     
     font-family: Arial, Helvetica, 'Courier New', Courier, monospace;
     font-size: 20px;
-    background-color:white;
+    background-color:#008577;
     margin: 15px;
     padding: 15px;
-    box-shadow: 0 8px 15px rgba(143, 94, 122, 0.699);
    border-radius: 5px; 
+   color:whitesmoke;
+   flex: 1 0 5rem;
 }
 li{
     list-style: none;
     font-size: 20px;
     padding: 5px;
-
-    border: 1px solid black;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
     margin: 15px;
-    
-
 }
 li:hover {
-    background-color:lightcoral;
+    background-color:#1313ece7;
+    flex: 1 0 5rem;
+
 }
 p{
     font-size: 20px;
@@ -67,16 +80,16 @@ p{
 } 
 /* CSS */
 .btn {
-    background-color:  #595959
-    ;
+  justify-content: center;
+    background-color:  #1313ece7;
     color: #fff;
-    padding: 12px 40px;
+    padding: 15px 40px  ;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
-    width: 300px;
+    width: 200px;
     box-shadow: 0 8px 15px rgba(0,0,0, 0.8);
   }
   .btn:hover{
@@ -87,11 +100,7 @@ p{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   }
-
   
-  /* Add this to your existing CSS  */
-
- /* Add this to your existing CSS */
 
 /* For screens with a maximum width of 768px (tablets and smaller) */
 @media only screen and (max-width: 768px) {
@@ -124,10 +133,12 @@ p{
       left: 0;
       transform: none;
       margin: 10px;
+      overflow: hidden;
     }
     .img {
       flex-direction: column;
       align-items: center;
+
     }
     li {
       margin-left: 0;
