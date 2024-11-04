@@ -7,36 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
+    <div class="main">
       <h1>Dynamic Resume Builder</h1>
       <form id="resume">
         <fieldset>
             <legend>Personal Information</legend>
-            <label for="name">Name </label>
-            <input type="text"id="name" placeholder="Enter Your Name" required>
-
-            <label for="email">Email </label>
-            <input type="email" id="email" placeholder="Enter Your Email" required>
-
-            <label for="phone">phone</label>
-            <input type="tel" id="phone" placeholder="Enter Your Ph : Number" required>
+            <div class="input-group">
+                <input type="text"  id="name" class="input-group__input" required>
+                <label for="name" class="input-group-label">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email"  id="email" class="input-group__input" required>
+                <label for="email" class="input-group-label">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="tel"  id="phone" class="input-group__input" required>
+                <label for="phone" class="input-group-label">Phone</label> 
+            </div>
+        
         </fieldset>
 
         <fieldset>
             <legend>Education</legend>
-            <label for="education">Education</label>
-            <textarea  id="education" placeholder="Enter Your Education" rows="5" required></textarea>
+
+            <div class="input-group">
+                <input type="text"  id="education" class="input-group__input1" required>
+                <label for="Education" class="input-group-label" rows="5">Education</label>
+            </div>
         </fieldset>
 
         <fieldset>
             <legend>Experience</legend>
-            <label for="experience">Experience</label>
-            <textarea  id="experience" placeholder="Enter Your Experience" rows="5" required></textarea>
+            <div class="input-group">
+                <input type="text"  id="experience" class="input-group__input1" required>
+                <label for="Education" class="input-group-label" rows="5">Experience</label>
+            </div>
+
         </fieldset>
 
         <fieldset>
             <legend>Skills</legend>
-            <label for="skills">Skills</label>
-            <textarea  id="skills" placeholder="Enter Your Skills" rows="5" required></textarea>
+            <div class="input-group">
+                <input type="text"  id="skills" class="input-group__input1" required>
+                <label for="Education" class="input-group-label" rows="5">Skills</label>
+            </div>
+
         </fieldset>
         <button type="submit"><strong>Generate Resume</strong></button>
       </form>
@@ -46,6 +61,7 @@
       <div id="resume-display">
         <!-- Resume will generated below  -->
       </div>
+    </div>
 
 
 
