@@ -8,10 +8,14 @@
 </head>
 <body> 
     <div class="main">
-        <h1>Editable & Dynamic Resume Builder</h1>
+        <h1>Shareable Resume Builder</h1>
         <form id="resume">
           <fieldset>
               <legend>Personal Information</legend>
+              <div class="input-group">
+                <input type="text"  id="username" class="input-group__input" required>
+                <label for="name" class="input-group-label">Name</label>
+            </div>
               <div class="input-group">
                   <input type="text"  id="name" class="input-group__input" required>
                   <label for="name" class="input-group-label">Name</label>
@@ -77,20 +81,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-#resume-display {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid #786f57;
-    border-radius: 8px;
-    background-color: rgb(228, 242, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    /* edit able resume  */
-    outline: none;
-}
-
-#resume-display h2 {
-    color: black;
-}
