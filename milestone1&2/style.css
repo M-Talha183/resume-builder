@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  
 }
 
 body {
@@ -13,15 +14,16 @@ body {
   background-color: #f4f4f9;
   padding: 20px;
   margin: 0;
+
 }
 
 .main {
   background-color: #ffffff;
   width: 80%;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
   color: #333;
   margin-bottom: 20px;
 }
@@ -42,14 +44,20 @@ h1 {
   color: #555;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .section {
   margin-bottom: 30px;
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #008577;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #008577;
   display: inline-block;
   padding-bottom: 5px;
@@ -58,17 +66,17 @@ h1 {
 .personal-info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 
 .personal-details {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 img {
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
   border: 2px solid #008577;
 }
@@ -87,7 +95,7 @@ li {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 li:hover {
@@ -97,14 +105,14 @@ li:hover {
 .btn {
   background-color: #008577;
   color: #fff;
-  padding: 12px 30px;
-  font-size: 16px;
+  padding: 10px 25px;
+  font-size: 14px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
   display: block;
-  margin: 20px auto;
 }
 
 .btn:hover {
@@ -116,18 +124,8 @@ li:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .main {
-      width: 95%;
-      padding: 15px;
-  }
-
-  h1 {
-      font-size: 28px;
-  }
-
-  .personal-info {
-      flex-direction: column;
-      align-items: center;
+  .content {
+      grid-template-columns: 1fr; /* Stacks columns on smaller screens */
   }
 }
 
@@ -136,11 +134,15 @@ li:hover {
       width: 100%;
   }
 
+  h1 {
+      font-size: 28px;
+  }
+
   .section-title {
       font-size: 20px;
   }
 
   li {
-      font-size: 16px;
+      font-size: 14px;
   }
 }
