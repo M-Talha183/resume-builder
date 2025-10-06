@@ -1,148 +1,165 @@
-/* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
+  background: #f4f7fb;
+  color: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #f4f4f9;
   padding: 20px;
-  margin: 0;
-
 }
 
-.main {
-  background-color: #ffffff;
-  width: 80%;
-  max-width: 1200px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
-  color: #333;
-  margin-bottom: 20px;
+.resume-container {
+  background: #fff;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 25px;
 }
 
+/* Header */
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 3px solid #0078d7;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
-
-h1 {
-  font-size: 36px;
-  color: #008577;
-  margin-bottom: 10px;
+.github-link {
+  color: #0078d7;
+  font-size: 14px;
+  text-decoration: none;
+}
+.github-link:hover {
+  text-decoration: underline;
 }
 
-.contact-info {
-  font-size: 16px;
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0078d7;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  color: #0078d7;
+}
+
+.header-text h3 {
+  font-weight: 500;
+  color: #444;
+  margin-top: 5px;
+}
+
+.summary {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
   color: #555;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.section {
-  margin-bottom: 30px;
-}
-
-.section-title {
-  font-size: 22px;
-  color: #008577;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #008577;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.personal-info {
+/* Contact */
+.contact {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8f2ff;
+  padding: 15px 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
-.personal-details {
-  font-size: 16px;
+.contact a {
+  color: #0078d7;
+  text-decoration: none;
 }
 
-img {
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-  border: 2px solid #008577;
+.download-btn {
+  background: orange;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.education-list,
-.experience-list,
-.skills-list {
+.download-btn:hover {
+  background: #005bb5;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.section h2 {
+  color: #0078d7;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0078d7;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 li {
-  margin: 10px 0;
+  background: #f9f9f9;
+  margin: 8px 0;
   padding: 10px;
-  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.5;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
-li:hover {
-  background-color: #e0f7fa;
+li a {
+  color: #0078d7;
+  text-decoration: none;
 }
 
-.btn {
-  background-color: #008577;
-  color: #fff;
-  padding: 10px 25px;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-  display: block;
+li a:hover {
+  text-decoration: underline;
 }
 
-.btn:hover {
-  background-color: #00695c;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.btn:active {
-  transform: scale(0.98);
-}
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
 
-@media only screen and (max-width: 768px) {
   .content {
-      grid-template-columns: 1fr; /* Stacks columns on smaller screens */
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .main {
-      width: 100%;
+    grid-template-columns: 1fr;
   }
 
-  h1 {
-      font-size: 28px;
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .section-title {
-      font-size: 20px;
-  }
-
-  li {
-      font-size: 14px;
+  .download-btn {
+    align-self: center;
   }
 }
